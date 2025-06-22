@@ -5,103 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>NanoBioSi — Smart Silicon Treatment</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      color: #222;
-      text-align: center;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
-    header {
-      background-color: #007153;
+    body {
+      height: 100vh;
+      background-image: url('fon_nanobiosi.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
       color: white;
-      padding: 30px 20px;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.3);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 2rem;
     }
 
-    main {
-      padding: 40px 20px;
+    header .contacts {
+      text-align: right;
+      font-size: 1rem;
     }
 
-    p {
-      font-size: 1.2em;
-      max-width: 600px;
-      margin: 0 auto 30px;
+    main.content {
+      text-align: center;
     }
 
-    .button {
-      display: inline-block;
-      padding: 14px 28px;
-      background-color: #007153;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
+    main.content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
     }
 
-    .button:hover {
-      background-color: #005c43;
+    main.content p {
+      font-size: 1.5rem;
+      max-width: 700px;
+      margin: 0 auto;
     }
 
     footer {
-      margin-top: 60px;
-      font-size: 14px;
-      color: #666;
-      padding: 20px 0;
+      text-align: center;
+      font-size: 1rem;
     }
   </style>
 </head>
 
 <body>
+  <div class="overlay">
+    <header>
+      <div class="contacts">
+        📞 +998 93 184-62-62 &nbsp; | &nbsp;
+        ✉️ <a href="mailto:sales.nanobiosi@gmail.com" style="color: white; text-decoration: none;">
+          sales.nanobiosi@gmail.com
+        </a>
+        <a href="https://t.me/nanobiosi" target="_blank" style="color: white; text-decoration: none;">
+          📱 Telegram
+        </a>
+      </div>
+    </header>
 
-  <header>
-    <h1>NanoBioSi</h1>
-    <p>Smart Silicon for Better Crops</p>
-  </header>
 
-  <main>
-    <p>
-      Watch the real-time treatment of wheat fields with NanoBioSi in Namangan, Uzbekistan.<br>
-      Applied at 100g per hectare — effective, simple and eco-friendly.
-    </p>
+    <main class="content">
+      <h1>NanoBioSi</h1>
+      <p>
+        High-performance silicon treatment for agriculture.<br>
+        Simple. Safe. Sustainable.
+      </p>
+    </main>
 
-    <section>
-  <h2>About NanoBioSi</h2>
-  <p>
-    NanoBioSi is a smart silicon fertilizer that enhances plant growth and increases resistance to stress. Developed for modern agriculture, it’s applied in micro-doses — only 100g per hectare.
-  </p>
-</section>
-
-<section>
-  <h2>Location</h2>
-  <p>
-    Demonstration field: Sherbulok, Chust, Namangan Region, Uzbekistan. <br>
-    Cluster: Namangan Tukmachi.
-  </p>
-</section>
-
-<section>
-  <h2>Watch the Process</h2>
-  <p>See how the application is done in the field:</p>
-  <video controls width="100%">
-    <source src="video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</section>
-
-    <a href="https://t.me/nanobiosi" class="button" target="_blank">Join us on Telegram</a>
-  </main>
-
-  <footer>
-    &copy; 2025 NanoBioSi. All rights reserved.
-  </footer>
-
+    <footer>
+      &copy; 2025 NanoBioSi — All rights reserved.
+    </footer>
+  </div>
 </body>
 </html>
